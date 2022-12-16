@@ -1,15 +1,18 @@
 <template>
   <div id='App'>
-  
+    <RestaurentCard/>
   </div>
   
 </template>
 
 <script>
+import RestaurentCard from './components/RestaurentCard.vue';
 
 export default {
   name: 'App',
-
+  components:{
+    RestaurentCard
+  }
 }
 </script>
 
