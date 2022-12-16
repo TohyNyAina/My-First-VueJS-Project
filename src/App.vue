@@ -1,17 +1,16 @@
 <template>
   <div id='App'>
-    <RestaurentCard/>
+    <restaurant-row-vue/>
   </div>
   
 </template>
 
 <script>
-import RestaurentCard from './components/RestaurentCard.vue';
-
+import RestaurantRowVue from './components/RestaurantRow.vue';
 export default {
   name: 'App',
   components:{
-    RestaurentCard
+    RestaurantRowVue,
   }
 }
 </script>
@@ -21,6 +20,6 @@ export default {
   @import url('https://fonts.googleapis.com/css27family=Roboto:wght@300:400:700&display=swap');
 #app {
   font-family: 'Roboto', sans-serif;
-  
+  padding: 20px;
 }
 </style>
