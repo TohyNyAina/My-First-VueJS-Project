@@ -1,5 +1,12 @@
 <template>
   <div class="home">
+    <div class="header">
+        <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/ee037401cb5d31b23cf780808ee4ec1f.svg" alt="" srcset="">
+        <input type="text" placeholder="De quoi avez vous envie ?">
+    </div>
+    <div class="bannier">
+
+    </div>
     <RestaurantRowVue v-for="(data, i) in data_restaurant" :key="i" :three_restaurant="data"/>
   </div>
 </template>
@@ -54,6 +61,32 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.home {
+    .header {
+       height: 120px; 
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       img {
+        width: 200px;
+       }
+       input {
+        background-color: #f6f6f6;
+        border: none;
+        height: 60px;
+        width: 400px;
+        outline: none;
+        padding-left: 20px;
+       }
+    }
+    .bannier {
+        height: 200px;
+        width: 100%;
+        background-image: url("https://www.ubereats.com/restaurant/_static/7b308f7cbbf8e335ceda0447a8bd7c63.png");
+        background-size: cover;
+        background-position: center center;
+    }
+}
 </style>
